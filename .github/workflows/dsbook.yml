@@ -1,0 +1,21 @@
+name: Datastar Book
+run-name: ${{ github.actor }} is building the datastar book. 🚀
+on: 
+  push:
+    branches:
+      master
+
+jobs:
+  Datastar-Book:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check versions
+        run:|
+          run node --version
+          node --version
+          npm --version
+          

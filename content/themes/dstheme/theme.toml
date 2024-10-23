@@ -1,0 +1,26 @@
+#:schema ./foo-schema.json
+# I don't know how to get the json document that is the schema for this config
+# file in hugo.
+
+name = 'dstheme'
+license = 'CREATIVE COMMONS BY-NC-SA '
+
+licenselink = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+description = 'Theme for the dsbook'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/iansmith/dsbook/content/theme/dstheme'
+
+# If you have a running demo of the theme
+#demosite = 'https://owner.github.io/repo'
+
+# Taxonomy terms
+tags = ['chapter', 'example']
+features = []
+
+# If the theme has multiple authors
+authors = [
+  {name = 'delaneyj', homepage = 'github.com/delaneyj'},
+  {name = 'iansmith', homepage = 'github.com/iansmith'}
+]
+

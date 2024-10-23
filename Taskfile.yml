@@ -1,0 +1,21 @@
+version: '3'
+
+tasks:
+  default:
+    deps: [hugo, tailwind]
+    cmds:
+      - echo built dsbook into content/public with hugo 
+  tailwind:
+    dir: tailwind  
+    cmds:
+     - npx tailwindcss -i input.css -o ../content/static/css/style.css
+    sources:
+     - input.css
+     - tailwind.config.js
+    generates:
+     - ../content/asset/css/style.css
+  hugo:
+    dir: content  
+    cmds:
+     - hugo build 
+

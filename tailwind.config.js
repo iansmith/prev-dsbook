@@ -1,5 +1,6 @@
 const typography = require('@tailwindcss/typography');
 const daisyui = require('daisyui')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
 	content: [
@@ -14,8 +15,8 @@ module.exports = {
 				brandfont:[ "Orbitron",...defaultTheme.fontFamily.sans]
 			}
 		}
-	}
-	
+	},
+
 	daisyui:{
 		themes: ["autumn", "dark", "light"]
 	}

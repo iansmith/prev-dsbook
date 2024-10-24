@@ -16,11 +16,7 @@ jobs:
     - run: which npm
     - run: which node
     - run: npm i
-    - run: echo $PATH
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 22.9.0
-    - uses: iansmith/gh-actions-hugo-deploy-gh-pages@master
+    - run: ./entrypoint.sh
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         HUGO_VERSION: "0.136.4"

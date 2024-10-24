@@ -10,6 +10,8 @@ mv /tmp/hugo /usr/local/bin/hugo &&\
 rm /tmp/hugo.tar.gz
 echo '=================== Create deploy key to push ==================='
 whoami
+pwd
+echo $HOME
 mkdir /root/.ssh
 ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts && \
 echo "${GIT_DEPLOY_KEY}" > /root/.ssh/id_rsa && \

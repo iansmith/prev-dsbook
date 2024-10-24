@@ -20,4 +20,5 @@ jobs:
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         HUGO_VERSION: "0.136.4"
+        PATH: /opt/hostedtoolcache/node/22.9.0/x64/bin/node:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # writes to gh-pages

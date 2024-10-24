@@ -1,4 +1,0 @@
-baseURL = 'https://github.io/iansmith/dsbook'
-languageCode = 'en-us'
-title = 'The Datastar Book'
-theme = 'dstheme'

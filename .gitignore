@@ -1,3 +1,6 @@
 tailwind/node_modules
 .task
 content/public
+resources/_gen
+node_modules
+public

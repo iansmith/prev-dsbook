@@ -1,0 +1,47 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "article",
+      "body",
+      "br",
+      "button",
+      "div",
+      "footer",
+      "h1",
+      "head",
+      "header",
+      "html",
+      "img",
+      "link",
+      "main",
+      "meta",
+      "p",
+      "script",
+      "small",
+      "strong",
+      "title"
+    ],
+    "classes": [
+      "bg-base-300",
+      "bg-p-100",
+      "btn",
+      "btn-primary",
+      "container",
+      "flex-col",
+      "font-bold",
+      "hero",
+      "hero-content",
+      "lg:flex-row",
+      "max-w-sm",
+      "min-h-screen",
+      "mx-auto",
+      "prose",
+      "px-4",
+      "rounded-lg",
+      "shadow-2xl",
+      "text-5xl"
+    ],
+    "ids": null
+  }
+}

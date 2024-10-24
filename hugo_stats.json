@@ -17,12 +17,11 @@
       "main",
       "meta",
       "p",
+      "script",
       "small",
-      "strong",
       "title"
     ],
     "classes": [
-      "bg-base-300",
       "bg-p-100",
       "btn",
       "btn-primary",

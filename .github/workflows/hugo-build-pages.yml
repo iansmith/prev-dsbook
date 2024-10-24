@@ -13,6 +13,8 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 22.9.0
+    - run: which npm
+    - run: which node
     - run: npm i
     - name: deploy hugo to gh pages
       uses: iansmith/gh-actions-hugo-deploy-gh-pages@master

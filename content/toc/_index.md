@@ -1,7 +1,10 @@
 +++
-layout = 'toc'
-list = 'always'
-publicResources = true
-render = 'always'
+title = "Table Of Contents"
 +++
-Here is some text.
+
+{{ define "main"}}
+This is the intro text for the Table Of Contents.
+{{ end }}
+
+
+

@@ -1,3 +1,14 @@
++++
+draft = false
+title = 'Build From Source'
+weight = 1
+summary = """\
+Tools you will need. \
+"""
+[params]
+  author = 'iansmith'
++++
+
 # README
 If you want to build from source, this is probably some info you will need.
 

@@ -9,6 +9,7 @@
       "div",
       "footer",
       "h1",
+      "h2",
       "head",
       "header",
       "html",
@@ -17,7 +18,6 @@
       "main",
       "meta",
       "p",
-      "script",
       "small",
       "title"
     ],
@@ -38,7 +38,7 @@
       "px-4",
       "rounded-lg",
       "shadow-2xl",
-      "text-5xl"
+      "text-xl"
     ],
     "ids": null
   }

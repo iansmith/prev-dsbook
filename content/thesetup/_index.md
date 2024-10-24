@@ -1,8 +1,6 @@
 +++
-draft = false
-kind = 'section'
-title = 'The Setup'
 weight = 10
+title = "The Setup"
 summary = """\
 This section covers the setup and tools you need to have \
 installed to do local development with Datastar. In \

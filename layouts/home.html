@@ -1,22 +1,40 @@
-  {{define "main"}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header>
+    {{ partial "partials/header.html" . }}
+  </header>
+  <main>
     <div class="container px-4">
       <div class="hero bg-p-100 min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
           <img
-            src="https://data-star.dev/static/images/rocket-304e710dde0b42b15673e10937623789adf72cae569c0e0defe7ec21c0bdf293.webp"
-            class="max-w-sm rounded-lg shadow-2xl" />
-          <div class="">
-            <h1 class="text-5xl font-bold">The Datastar Book</h1>
-            <br/>
+            src="https://data-star.dev/static/images/rocket-304e710dde0b42b15673e10937623789adf72cae569c0e0defe7ec21c0bdf293.webp" 
+            class="max-w-sm rounded-lg shadow-2xl"/>
+          <div >
+            <h1> Simplicity Is A Virtue</h1>
+            <p class="text-xl font-bold">The Datastar Book</p>
+            <br />
             <article class="prose">
               {{ .Content }}
-              </article>
-            <br/>
-            <br/>
-            <br/>
+            </article>
+            <br />
+            <br />
+            <br />
+            <a href="{{ ref . "toc" }}">
+              <button class="btn btn-primary">See what we got</button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-{{ end }}
+    </div>    
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
+

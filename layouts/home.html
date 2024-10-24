@@ -3,29 +3,29 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
+<body class="bg-base-300">
   <header>
     {{ partial "partials/header.html" . }}
   </header>
   <main>
-    <div class="container px-4">
-      <div class="hero bg-p-100 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
+    <div class="xl:container min-w-96 px-4">
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col xl:flex-row">
           <img
             src="https://data-star.dev/static/images/rocket-304e710dde0b42b15673e10937623789adf72cae569c0e0defe7ec21c0bdf293.webp" 
             class="max-w-sm rounded-lg shadow-2xl"/>
-          <div >
-            <h1> Simplicity Is A Virtue</h1>
-            <p class="text-xl font-bold">The Datastar Book</p>
+          <div class="prose">
+            <span class="text-5xl leading-3"> Simplicity Is A Virtue</span><br/>
+            <span class="text-xl  text-right font-bold font-variant-caps">The Datastar Book</span>
             <br />
-            <article class="prose">
+            <br/>
+            <div class="prose">
               {{ .Content }}
-            </article>
+            </div>
             <br />
-            <br />
-            <br />
-            <a href="{{ ref . "toc" }}">
-              <button class="btn btn-primary">See what we got</button>
+            {{- $opts := dict "path" "/toc" }}
+            <a href="{{ .Ref  $opts }}">
+              <button class="btn btn-primary">Check it out</button>
             </a>
           </div>
         </div>

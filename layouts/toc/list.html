@@ -1,8 +1,25 @@
-<h1>list</h1>
+{{ define "main" }}
 
-{{ range .Site.Sections }}
-{{ if compare.Ne .Title "Table Of Contents" }}
-<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-{{ end }}
-{{ end }}
+<div class="xl:container min-w-96 min-h-96 px-4 py-4">
+    <div class="text-center">
+        <h1 class="text-5xl text-bold prose">{{.Title}}</h1>
+    </div>
+    <p class="py-6">
+    </p>
+    {{- range .Site.Sections }}
+    {{- if compare.Ne .Title "Table Of Contents" }}
+        <div class="px-4 card bg-base-100 w-96 shadow-2xl">
+            <div class="card-body">
+                <h2 class="card-title">{{- .Title}}</h2>
+                <p class="prose">{{- .Summary }}</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Go</button>
+                </div>
+            </div>
+        </div>
+</article>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}
 

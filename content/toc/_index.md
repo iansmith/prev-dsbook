@@ -2,9 +2,7 @@
 title = "Table Of Contents"
 +++
 
-{{ define "main"}}
-This is the intro text for the Table Of Contents.
-{{ end }}
+This table of contents is generated automatically.  So don't complain to us, complain to the computer.
 
 
 

@@ -8,7 +8,14 @@ module.exports = {
 		'./hugo_stats.json'
 	],
 	plugins: [typography, daisyui ],
-
+	theme:{
+		extend:{
+			fontFamily:{
+				brandfont:[ "Orbitron",...defaultTheme.fontFamily.sans]
+			}
+		}
+	}
+	
 	daisyui:{
 		themes: ["autumn", "dark", "light"]
 	}

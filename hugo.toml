@@ -15,6 +15,7 @@ disableKinds = ["taxonomy", "term"]
 
 [build]
   writeStats = true
+  
   [[build.cachebusters]]
     source = "assets/watching/hugo_stats\\.json"
     target = "styles\\.css"

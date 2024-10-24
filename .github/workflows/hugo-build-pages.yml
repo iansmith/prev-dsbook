@@ -16,6 +16,7 @@ jobs:
     - run: which npm
     - run: which node
     - run: npm i
+    - run: echo $PATH
     - uses: iansmith/gh-actions-hugo-deploy-gh-pages@master
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
